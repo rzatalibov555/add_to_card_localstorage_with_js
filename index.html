@@ -1,0 +1,204 @@
+<!-- https://www.w3schools.com/jsref/prop_win_localstorage.asp -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+   <!-- <form action="#" method="">
+        <label for="name">Name</label><br>
+        <input type="text" name="" id="name" placeholder="name"> <br><br>
+        
+        <label for="surname">Surname</label> <br>
+        <input id="surname" type="text" name="" placeholder="surname"> <br><br>
+        
+        <label for="username">Username</label> <br>
+        <input id="username" type="text" name="" placeholder="username"> <br><br>
+        
+        <label for="email">Email</label> <br>
+        <input id="email" type="email" name="" placeholder="email"> <br><br>
+        
+        <label for="password">Password</label> <br>
+        <input type="text" name="" placeholder="password"> <br><br>
+        
+        
+        <button type="button">Register</button>
+    </form> -->
+
+
+
+
+
+    <!-- <form action="#" method="">
+        <label for="name">Name</label><br>
+        <input type="text" name="name" id="name" placeholder="name"><br><br>
+    
+        <label for="surname">Surname</label><br>
+        <input id="surname" type="text" name="surname" placeholder="surname"><br><br>
+    
+        <label for="username">Username</label><br>
+        <input id="username" type="text" name="username" placeholder="username"><br><br>
+    
+        <label for="email">Email</label><br>
+        <input id="email" type="email" name="email" placeholder="email"><br><br>
+    
+        <label for="password">Password</label><br>
+        <input type="password" name="password" id="password" placeholder="password"><br><br>
+    
+        <button type="button" onclick="register()">Register</button>
+    </form> -->
+    
+    <!-- <script>
+        // Səhifə yükləndikdə yoxlayırıq ki, local storage-da məlumat varsa, onları inputlara dolduraq
+        window.onload = function () {
+            document.getElementById('name').value = localStorage.getItem('name') || '';
+            document.getElementById('surname').value = localStorage.getItem('surname') || '';
+            document.getElementById('username').value = localStorage.getItem('username') || '';
+            document.getElementById('email').value = localStorage.getItem('email') || '';
+            document.getElementById('password').value = localStorage.getItem('password') || '';
+            // Şifrənin özünü göstərmək təhlilində təhlil etdiyimiz üçün onu local storage-dan oxumağa ehtiyac yoxdur
+        };
+    
+        function register() {
+            // Input elementlərindən daxil edilən məlumatları local storage-a yazırıq
+            localStorage.setItem('name', document.getElementById('name').value);
+            localStorage.setItem('surname', document.getElementById('surname').value);
+            localStorage.setItem('username', document.getElementById('username').value);
+            localStorage.setItem('email', document.getElementById('email').value);
+            localStorage.setItem('password', document.getElementById('password').value);
+            // Şifrəni yaddaşa yazmırıq, təhlil məqsədilə olduğundan göstərmirik
+    
+            // Burada başqa bir rejistrasiya prosesinə davam edə bilərsiniz (məs. formu göndərə bilərsiniz)
+            // Əgər lazımsızsa səhifəni təzələyə bilərsiniz
+        }
+    </script> -->
+
+
+
+    <!-- <form action="#" method="">
+        <label for="name">Name</label><br>
+        <input type="text" name="name" id="name" placeholder="name"> <br><br>
+    
+        <label for="surname">Surname</label> <br>
+        <input id="surname" type="text" name="surname" placeholder="surname"> <br><br>
+    
+        <label for="username">Username</label> <br>
+        <input id="username" type="text" name="username" placeholder="username"> <br><br>
+    
+        <label for="email">Email</label> <br>
+        <input id="email" type="email" name="email" placeholder="email"> <br><br>
+    
+        <label for="password">Password</label> <br>
+        <input type="password" name="password" placeholder="password"> <br><br>
+    
+        <button type="button" onclick="register()">Register</button>
+    </form> -->
+    
+    <!-- Sebeti gosteren hisse -->
+    <!-- <div id="cart"></div>
+    
+    <script>
+        // Səhifə yükləndikdə yoxlayırıq ki, local storage-da məlumat varsa, onları inputlara dolduraq
+        window.onload = function () {
+            document.getElementById('name').value = localStorage.getItem('name') || '';
+            document.getElementById('surname').value = localStorage.getItem('surname') || '';
+            document.getElementById('username').value = localStorage.getItem('username') || '';
+            document.getElementById('email').value = localStorage.getItem('email') || '';
+        };
+    
+        function register() {
+            // Input elementlərindən daxil edilən məlumatları local storage-a yazırıq
+            localStorage.setItem('name', document.getElementById('name').value);
+            localStorage.setItem('surname', document.getElementById('surname').value);
+            localStorage.setItem('username', document.getElementById('username').value);
+            localStorage.setItem('email', document.getElementById('email').value);
+            // Şifrəni yaddaşa yazmırıq, təhlil məqsədilə olduğundan göstərmirik
+    
+            // Sebətə məlumatları əlavə edirik
+            addToCart();
+        }
+    
+        function addToCart() {
+            // Local storage-dan məlumatları oxuyuruq
+            var name = localStorage.getItem('name');
+            var surname = localStorage.getItem('surname');
+            var username = localStorage.getItem('username');
+            var email = localStorage.getItem('email');
+    
+            // Səbət divini tapıb içini doldururuq
+            var cartDiv = document.getElementById('cart');
+            cartDiv.innerHTML = `
+                <h2>Shopping Cart</h2>
+                <p>Name: ${name}</p>
+                <p>Surname: ${surname}</p>
+                <p>Username: ${username}</p>
+                <p>Email: ${email}</p>
+            `;
+        }
+    </script> -->
+    
+    <form action="#" method="">
+        <label for="product">Product</label><br>
+        <input type="text" name="product" id="product" placeholder="product"> <br><br>
+    
+        <label for="price">Price</label> <br>
+        <input id="price" type="number" name="price" placeholder="price"> <br><br>
+    
+        <button type="button" onclick="addToCart()">Add to Cart</button>
+    </form>
+    
+    <!-- Sebeti gosteren hisse -->
+    <div id="cart"></div>
+    
+    <script>
+        // Səbət məlumatlarını yaddaşa və sebət divinə yazmaq üçün funksiya
+        function updateCart(items) {
+            console.log(items)
+            var cartDiv = document.getElementById('cart');
+            var totalQuantity = 0;
+            var totalPrice = 0;
+    
+            // Sebətdəki məhsulları loop-dan keçirərək cəmi və sayı hesablayırıq
+            var cartContent = "<h2>Shopping Cart</h2>";
+            items.forEach(function (item) {
+                cartContent += `<p>${item.name} - Price: $${item.price}</p>`;
+                totalQuantity++;
+                totalPrice += item.price;
+            });
+    
+            cartContent += `<p>Total Items: ${totalQuantity}</p>`;
+            cartContent += `<p>Total Price: $${totalPrice}</p>`;
+    
+            cartDiv.innerHTML = cartContent;
+        }
+    
+        // Səhifə yükləndikdə səbəti yaratmaq üçün boş bir səbət yaratırıq
+        var cartItems = [];
+    
+        // Səbətə məhsul əlavə etmək üçün funksiya
+        function addToCart() {
+            var productName = document.getElementById('product').value;
+            var productPrice = parseInt(document.getElementById('price').value);
+    
+            // Yeni məhsul obyekti yaradırıq və səbətə əlavə edirik
+            var newItem = {
+                name: productName,
+                price: productPrice,
+            };
+            cartItems.push(newItem);
+    
+            // Səbət divini yeniləyirik
+            updateCart(cartItems);
+        }
+    </script>
+    
+    
+    
+</body>
+</html>
+<script src="js/main.js"></script>
